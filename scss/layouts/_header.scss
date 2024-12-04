@@ -1,0 +1,41 @@
+.header {
+  width: 100%;
+  background-color: $midnight-green;
+  padding-bottom: 12.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+  }
+  &__sitenav__list {
+    display: flex;
+    gap: 4rem;
+  }
+  &__link:hover {
+    color: $light-coral;
+  }
+  &__toggle-btn {
+    background-color: transparent;
+    border: 0;
+    display: block;
+    margin-left: auto;
+    display: none;
+  }
+}
+
+.sitenav-container {
+  @include flex-center;
+}
+
+.sitenav {
+  padding-top: 7.3rem;
+  display: flex;
+  gap: 57rem;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}

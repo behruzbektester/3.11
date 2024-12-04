@@ -1,0 +1,59 @@
+.header {
+  padding-bottom: 12rem;
+}
+
+.contact-section {
+  background-image: url(../images/contact-bg.svg),
+    url(../images/contact-bottom.svg);
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+  padding-bottom: 14rem;
+  &__side-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__space {
+    width: 54rem;
+    height: 4.2rem;
+    padding-bottom: 1.6rem;
+    padding-left: 1.4rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid $white;
+    &::placeholder {
+      color: $white;
+      opacity: 60%;
+    }
+  }
+  &__question-type {
+    width: 44.5rem;
+  }
+  &__left-top {
+    display: flex;
+    gap: 1.6rem;
+    flex-direction: column;
+  }
+  &__ask-heading {
+    font-size: 3.2rem;
+    line-height: 1.5;
+    color: $light-coral;
+  }
+}
+
+.message {
+  padding-bottom: 2.6rem;
+}
+
+.rightht {
+  display: flex;
+}
+
+.leftt {
+  display: flex;
+}
+
+button {
+  margin-top: 2rem;
+}

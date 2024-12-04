@@ -1,0 +1,145 @@
+.finding-talent-section {
+  background-color: $midnight-green;
+  background-image: url(../images/hero-bottom-img.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  &__sides-container {
+    @include align;
+    padding-bottom: 12rem;
+  }
+  &__hero-left-img {
+    position: absolute;
+    top: 25rem;
+  }
+  &__heading {
+    width: 62rem;
+  }
+  &__heading-span {
+    color: $light-coral;
+  }
+  &__right {
+    @include flex-column;
+    gap: 7.9rem;
+    align-items: baseline;
+  }
+  &__right-text {
+    width: 44.5rem;
+    @include pbig;
+  }
+}
+
+.build-teams-section {
+  background-color: $sacramento;
+  padding-top: 14rem;
+  padding-bottom: 14rem;
+  position: relative;
+  background-image: url(../images/bulid-teams-left-bg.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  &__sides-container {
+    @include flex-center;
+    gap: 12.5rem;
+  }
+  &__left {
+    @include flex-center;
+    flex-direction: column;
+    gap: 5.4rem;
+    align-items: baseline;
+  }
+  &__heading {
+    width: 44.5rem;
+  }
+  &__right {
+    @include flex-column;
+    gap: 3.2rem;
+  }
+  &__e-e-e {
+    @include flex;
+    gap: 2.3rem;
+  }
+  &__e-e-e__heading {
+    color: $light-coral;
+  }
+  &__e-e-e-text {
+    font-weight: 600;
+    opacity: 80%;
+  }
+  &__right-img {
+    position: absolute;
+    right: 0;
+    top: 32.5rem;
+  }
+}
+
+.success-stories-section {
+  padding-top: 14rem;
+  background-color: $jungle-green;
+  background-image: url(../images/success-stories-top-leftbg.svg),
+    url(../images/success-bg-right.svg);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+  padding-bottom: 14rem;
+  &__heading {
+    width: 93.2rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5.6rem;
+  }
+  &__success-span {
+    color: $rapture-blue;
+  }
+  &__successors {
+    @include justify;
+    gap: 3rem;
+  }
+  &__success-stories {
+    @include psmall;
+    width: 35rem;
+    text-align: center;
+  }
+  &__successors-box {
+    width: 35rem;
+    padding-top: 3.6rem;
+    @include flex-column;
+    justify-content: center;
+    background-image: url(../images/icon-quotes.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+  &__name-and-job {
+    padding-top: 2.4rem;
+    padding-bottom: 3.2rem;
+    @include flex-column;
+    align-items: center;
+  }
+  &__name-and-job > h4 {
+    color: $rapture-blue;
+  }
+  &__job {
+    font-style: italic;
+    font-size: 1.3rem;
+    line-height: 1.3;
+  }
+  &__box-img {
+    @include justify;
+  }
+}
+
+.ready-section {
+  background-color: $light-coral;
+  padding-top: 7.6rem;
+  padding-bottom: 7.6rem;
+  background-image: url(../images/ready-section-bg.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  &__container {
+    @include flex;
+    justify-content: space-between;
+    padding: 0 9.8rem;
+  }
+  &__heading {
+    @include h3;
+    color: $sacramento;
+  }
+}

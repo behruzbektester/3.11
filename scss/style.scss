@@ -1,0 +1,304 @@
+@import "./vendors/normalize";
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./base/base";
+@import "./base/typography";
+@import "./components/buttons";
+@import "./layouts/header";
+@import "./layouts/footer";
+@import "./layouts/index";
+@import "./layouts/about";
+@import "./layouts/contact";
+// media
+@media (max-width: 1095px) {
+  .sitenav {
+    gap: 40rem;
+  }
+  .finding-talent-section {
+    &__sides-container {
+      flex-direction: column;
+      @include flex-center;
+    }
+    &__right-img {
+      display: none;
+    }
+    &__heading {
+      @include h2;
+    }
+  }
+  .left-img {
+    display: none;
+  }
+  .success-stories-section {
+    &__heading {
+      width: 47rem;
+      font-size: 3.2rem;
+    }
+    &__successors {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__successors-box {
+      @include flex-column;
+      align-items: center;
+    }
+    &__box-img > img {
+      width: 6.2rem;
+    }
+    &__success-stories {
+      width: 57.3rem;
+    }
+  }
+  .ready-section {
+    &__heading {
+      font-size: 3.2rem;
+      line-height: 1;
+      width: 33.6rem;
+    }
+  }
+  .about-section {
+    &__container {
+      @include flex-column;
+    }
+    &__on-text-bg {
+      display: none;
+    }
+    &__heading {
+      text-align: center;
+    }
+  }
+  .clients-section__logos-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-section {
+    &__side-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .sitenav {
+    gap: 22rem;
+  }
+  .finding-talent-section {
+    background-position: bottom center;
+    &__heading {
+      @include h2;
+      width: 38rem;
+      padding-bottom: 2.4rem;
+      text-align: center;
+    }
+    &__right-img {
+      display: none;
+    }
+    &__right-text {
+      text-align: center;
+      padding-bottom: 25.6rem;
+      font-size: 1.5rem;
+      line-height: 1.9;
+      font-weight: 600;
+    }
+  }
+  .build-teams-section {
+    background-position: bottom right;
+    &__sides-container {
+      @include flex-column;
+    }
+    &__heading {
+      width: 44.5rem;
+      font-size: 3.2rem;
+      line-height: 1;
+    }
+    &__right__e-e-e-container {
+      width: 50rem;
+    }
+  }
+  .ready-section {
+    &__heading {
+      width: 32.7rem;
+    }
+  }
+  .about-section {
+    &__heading {
+      line-height: 0.85;
+    }
+    &__text {
+      text-align: center;
+      width: 45.7rem;
+      font-size: 1.5rem;
+      line-height: 1.9;
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .header {
+    &__left {
+      gap: 4.8rem;
+    }
+    &__logo-icon {
+      width: 12.8rem;
+    }
+  }
+  .container {
+    margin-left: 9.7rem;
+    margin-right: 9.7rem;
+  }
+  .sitenav {
+    padding-top: 6.4rem;
+  }
+  .finding-talent-section {
+    &__heading {
+      font-size: 4rem;
+      line-height: 1;
+      width: 23rem;
+    }
+    &__right-text {
+      width: 32.7rem;
+    }
+  }
+  .build-teams-section {
+    &__left {
+      gap: 3.2rem;
+    }
+    &__e-e-e__img {
+      width: 7.2rem;
+      height: 7.2rem;
+    }
+  }
+  .ready-section {
+    &__container {
+      @include flex-column;
+      align-items: center;
+      justify-content: center;
+      gap: 2.4rem;
+    }
+    &__heading {
+      text-align: center;
+    }
+  }
+  .directors-section {
+    &__heading {
+      font-size: 3.2rem;
+    }
+    &__wrapper {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .header {
+    max-width: 60rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    &__list {
+      position: absolute;
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+  .sitenav {
+    gap: 20rem;
+  }
+  .finding-talent-section {
+    &__right-text {
+      padding-bottom: 19.7rem;
+    }
+  }
+  .build-teams-section {
+    background-position: top right;
+    &__heading {
+      display: flex;
+      width: 24rem;
+    }
+    &__e-e-e {
+      @include flex-column;
+      align-items: center;
+    }
+    &__right__e-e-e-container {
+      @include flex-center;
+      @include flex-column;
+    }
+    &__e-e-e__heading {
+      text-align: center;
+    }
+    &__e-e-e__text {
+      text-align: center;
+      width: 32.7rem;
+      @include flex-center;
+      font-size: 1.5rem;
+      line-height: 1.9;
+      font-weight: 600;
+      opacity: 80%;
+    }
+  }
+  .success-stories-section {
+    &__successors {
+      gap: 8.4rem;
+    }
+    padding-bottom: 16.4rem;
+    &__success-stories {
+      width: 32.7rem;
+    }
+  }
+  .footer {
+    &__container {
+      @include flex-column;
+      align-items: center;
+      gap: 2.4rem;
+    }
+    &__socials {
+      @include flex-center;
+    }
+  }
+  .contact-section {
+    text-align: center;
+    h2 {
+      font-size: 4rem;
+      line-height: 1;
+    }
+    h3 {
+      font-size: 3.2rem;
+      line-height: 1.5;
+    }
+    &__right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    input {
+      width: 32.7rem;
+    }
+  }
+}
+
+@media (max-width: 490px) {
+  .header {
+    &__btn {
+      display: none;
+    }
+    &__toggle-btn {
+      display: block;
+    }
+  }
+  .sitenav {
+    padding-top: 4.8rem;
+    gap: 17.9rem;
+  }
+  .container {
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
+  }
+}

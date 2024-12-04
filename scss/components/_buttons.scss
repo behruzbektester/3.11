@@ -1,0 +1,51 @@
+.primary-btn-light,
+.primary-btn-dark,
+.secondary-btn {
+  padding-top: 0.9rem;
+  padding-bottom: 1.1rem;
+  padding-left: 3.2rem;
+  padding-right: 3.3rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-radius: 2.4rem;
+  transition: 0.3s;
+}
+
+.primary-btn-light {
+  border: 2px solid $white;
+  background-color: transparent;
+  color: $white;
+  &:hover {
+    background-color: $white;
+    color: $black;
+  }
+}
+
+.primary-btn-dark {
+  border: 2px solid $sacramento;
+  background-color: transparent;
+  color: $sacramento;
+  &:hover {
+    background-color: $sacramento;
+    color: $white;
+  }
+}
+
+.secondary-btn {
+  border: 2px solid $white;
+  background-color: $white;
+  color: $black;
+  &:hover {
+    background-color: $rapture-blue;
+    border-color: $rapture-blue;
+  }
+}
+
+@media (max-width: 1095px) {
+  .primary-btn-light,
+  .primary-btn-dark,
+  .secondary-btn {
+    display: block;
+    text-wrap: nowrap;
+  }
+}

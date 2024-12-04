@@ -1,0 +1,144 @@
+.header {
+  @include justify;
+}
+
+.about-section {
+  background-image: url(../images/about-bg.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  padding-bottom: 12rem;
+  &__container {
+    @include flex-center;
+    gap: 3rem;
+  }
+  &__heading {
+    width: 35rem;
+    @include h2;
+  }
+  &__text-container {
+    @include flex-column;
+    align-items: baseline;
+    gap: 4rem;
+  }
+  &__text {
+    width: 73rem;
+    @include pbig;
+  }
+  &__about-bg {
+    position: absolute;
+    top: 31.7rem;
+    right: 0;
+  }
+}
+
+.directors-section {
+  background-image: url(../images/directors-bg-img.svg),
+    url(../images/director-bottom-bg.svg);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+  background-color: $jungle-green;
+  &__heading {
+    text-align: center;
+    padding-top: 14.6rem;
+    padding-bottom: 6.4rem;
+  }
+  &__boxes-container {
+    @include flex-column;
+    gap: 7.6rem;
+    @include flex-center;
+    margin-left: 16.5rem;
+    margin-right: 16.5rem;
+    padding-bottom: 16.8rem;
+  }
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+  &__top-boxes {
+    @include flex;
+    gap: 3rem;
+  }
+  &__bottom-boxes {
+    @include flex;
+    gap: 3rem;
+  }
+  &__boxes {
+    background-color: $sacramento;
+    width: 35rem;
+    @include flex-column;
+    align-items: center;
+    padding: 3.2rem 2.4rem;
+    @include flex-center;
+    position: relative;
+  }
+  &__boxes-heading {
+    color: $rapture-blue;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    font-weight: 700;
+    text-align: center;
+  }
+  &__boxes__job {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.9;
+  }
+  &__boxes-text {
+    text-align: center;
+    width: 25.4rem;
+  }
+  &__box-inner-left {
+    @include flex-center;
+    @include flex-column;
+    gap: 0.5rem;
+  }
+  &__box-inner-plus {
+    position: absolute;
+    top: 20rem;
+  }
+  &__box-inner-blue-img {
+    position: absolute;
+    top: 20rem;
+  }
+  &__box-inner-plus:hover circle {
+    fill: $rapture-blue;
+  }
+  &__box-inner-blue-img:hover circle {
+    fill: $light-coral;
+  }
+}
+
+.last-box {
+  gap: 2.4rem;
+}
+
+.socials {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.social-icons:hover path {
+  fill: $light-coral;
+}
+
+.clients-section {
+  background-image: url(../images/clients-circle.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  @include flex-column;
+  gap: 7rem;
+  padding-top: 14rem;
+  padding-bottom: 14rem;
+  background-color: $sacramento;
+  &__heading {
+    text-align: center;
+  }
+  &__logos-container {
+    display: flex;
+    gap: 8rem;
+    align-items: center;
+    justify-content: center;
+  }
+}

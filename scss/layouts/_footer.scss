@@ -1,0 +1,49 @@
+.footer {
+  width: 100%;
+  background-color: $black;
+  padding-top: 4.8rem;
+  padding-bottom: 4.8rem;
+  padding-left: 16.5rem;
+  padding-right: 16.5rem;
+  @include flex-center;
+  &__container {
+    @include flex;
+    gap: 12.5rem;
+    justify-content: space-between;
+  }
+  &__left-container {
+    @include flex-column;
+    gap: 2.5rem;
+  }
+  &__list {
+    @include flex;
+    gap: 4rem;
+  }
+  &__list__item__link:hover {
+    color: $light-coral;
+  }
+  &__socials {
+    @include flex-column;
+    gap: 5.1rem;
+    align-items: end;
+  }
+  &__socials-copyright {
+    @include flex;
+    gap: 1.6rem;
+  }
+  &__social-icon:hover path {
+    fill: $light-coral;
+  }
+  &__copyright-text {
+    @include psmall;
+    opacity: 60%;
+  }
+  &__addresses__list {
+    @include flex-column;
+    @include psmall;
+    opacity: 60%;
+  }
+  & address {
+    font-style: normal;
+  }
+}
